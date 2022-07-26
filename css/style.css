@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 30px 0;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.flexWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font: 400 32px Georgia;
+    text-decoration: none;
+    color: #545454;
+    letter-spacing: 0.06em;
+}
+
+.slog {
+    font: 400 13px Arial;
+    letter-spacing: 0.1em;
+    color: #292929;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #545454;
+    font: 400 15px Arial;
+}
+
+.burger {
+    margin-right: 40px;
+    display: none;
+}
+
+.active {
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 4px;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 4px;
+}
+
+main {
+    background-color: #F6F6F6;
+    padding: 80px 0 100px;
+}
+
+.container h2 {
+    max-width: 400px;
+    height: 90px;
+    font: 400 35px Georgia;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    text-align: center;
+    color: #545454;
+    margin: 0 auto;
+}
+
+.pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.petCard {
+    background-color: #FAFAFA;
+    flex-basis: 270px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.petCard p {
+    margin: 30px 0;
+    font: 400 20px Georgia;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.learnMore {
+    display: inline-block;
+    padding: 15px 45px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    text-decoration: none;
+    font: 400 17px Georgia;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    color: #292929;
+}
+
+.petsNav {
+    max-width: 340px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.petsNavButton {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font: 400 20px Georgia;
+    cursor: pointer;
+}
+
+.petsNav .disabledPage {
+    color: #CDCDCD;
+    border: 2px solid #CDCDCD;
+    background-color: #F6F6F6;
+}
+
+.petsNav .activePage {
+    color: #292929;
+    background-color: #F1CDB3;
+    border: none;
+}
+
+.petsNav .activeNav {
+    color: #292929;
+    border: 2px solid #F1CDB3;
+    background-color: #F6F6F6;
+}
+
+footer {
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    padding-top: 40px;
+}
+
+footer h3 {
+    font: 400 35px Georgia;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    padding-top: 16px;
+    margin-bottom: 33px;
+}
+
+footer .flexWrapper {
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+
+footer .flexWrapper>div {
+    width: 300px;
+}
+
+footer p {
+    min-height: 46px;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    font: 400 20px Georgia;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+footer .email {
+    background: url(../img/icon/mail.svg) no-repeat left center;
+}
+
+footer .tel {
+    background: url(../img/icon/phone.svg) no-repeat left center;
+}
+
+footer .local {
+    background: url(../img/icon/pin.svg) no-repeat left center;
+    padding-left: 42px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F1CDB3;
+}
+
+footer .petFoot {
+    background-image: url(../img/footer-puppy.png);
+    height: 310px;
+}
+
+@media(max-width:1242px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media(max-width:768px) {
+    .pets {
+        justify-content: space-evenly;
+    }
+    footer .flexWrapper {
+        justify-content: space-around;
+    }
+    footer .petFoot {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:720px) {
+    nav li {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+@media(max-width:420px) {
+    .container h2 {
+        font: 400 25px Georgia;
+    }
+}

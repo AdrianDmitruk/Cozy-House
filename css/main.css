@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 30px;
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.flexWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font: 400 32px Georgia;
+    text-decoration: none;
+    color: #F1CDB3;
+    letter-spacing: 0.06em;
+}
+
+.slog {
+    font: 400 13px Arial;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FAFAFA;
+    font: 400 15px Arial;
+}
+
+.burger {
+    margin-right: 40px;
+    display: none;
+}
+
+.active {
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 4px;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 4px;
+}
+
+.container .startFooter {
+    max-width: 1200px;
+}
+
+.startFooter {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startDog {
+    background: url(../img/start-screen-puppy.png) no-repeat;
+    width: 698px;
+    height: 728px;
+}
+
+.startContent {
+    display: inline-block;
+    max-width: 460px;
+}
+
+.startContent h2 {
+    max-width: 325px;
+    line-height: 130%;
+    font: 400 44px Georgia;
+    color: #FFFFFF
+}
+
+.startContent p {
+    margin: 42px 0 41px 0;
+    font: 400 15px Arial;
+    line-height: 160%;
+    color: #CDCDCD;
+}
+
+.startContent a {
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 100px;
+    font: 400 17px Georgia;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    text-decoration: none;
+    background-color: #F1CDB3;
+}
+
+.about {
+    margin: 73px 0 91px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .aboutPets {
+    background-image: url(../img/about-pets.png);
+    width: 300px;
+    height: 408px;
+    margin-right: 126px;
+}
+
+.about .aboutText {
+    max-width: 430px;
+}
+
+.about .aboutText h2 {
+    max-width: 370px;
+    font: 400 35px Georgia;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    color: #545454;
+    margin-bottom: 25px;
+}
+
+.about .aboutText p {
+    font: 400 15px Arial;
+    letter-spacing: 0.06em;
+    line-height: 160%;
+    color: #4C4C4C;
+}
+
+.about .aboutText .aboutTextP {
+    margin-bottom: 25px;
+}
+
+.pets {
+    background-color: #F6F6F6;
+    padding: 80px 0 100px 0;
+}
+
+.container .petsH {
+    max-width: 400px;
+    font: 400 35px Georgia;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    text-align: center;
+    color: #545454;
+    margin: 0 auto;
+}
+
+.container .petsX {
+    max-width: 400px;
+    font: 400 35px Georgia;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    text-align: center;
+    color: #545454;
+    margin: 0 auto;
+}
+
+.petsContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.petCard {
+    background-color: #FAFAFA;
+    flex-basis: 270px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.petCard p {
+    margin: 30px 0;
+    font: 400 20px Georgia;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.learnMore {
+    display: inline-block;
+    padding: 15px 45px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    text-decoration: none;
+    font: 400 17px Georgia;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    color: #292929;
+}
+
+.petsNavButton {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #F1CDB3;
+}
+
+.petsContent .leftPage {
+    background: url(../img/icon/ArrowL.svg) no-repeat center;
+}
+
+.petsContent .rightPage {
+    background: url(../img/icon/ArrowR.svg) no-repeat center;
+}
+
+.getBuuton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.getBuuton a {
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 100px;
+    background-color: #F1CDB3;
+    text-decoration: none;
+    font: 400 17px Georgia;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    color: #292929;
+}
+
+.help {
+    background-color: #FFFFFF;
+    padding: 80px 0 43px 0;
+}
+
+.container .petsL {
+    max-width: 315px;
+    height: 90px;
+    font: 400 35px Georgia;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    text-align: center;
+    color: #545454;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.helpContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.helpContentList {
+    margin-bottom: 55px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.helpContentList img {
+    margin-bottom: 30px;
+}
+
+.helpContentList p {
+    font: 400 20px Georgia;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.donat {
+    background-color: #F6F6F6;
+    padding: 80px 0 100px 0;
+}
+
+.donatContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.donatContent .donatDog {
+    width: 505px;
+    height: 261px;
+    background-image: url(../img/donation-dog.png);
+    margin-right: 15px;
+}
+
+.donatContent .donatIfo {
+    max-width: 380px;
+    margin-left: 15px;
+}
+
+.donatIfo h3 {
+    font: 400 35px Georgia;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    max-width: 300px;
+    color: #545454;
+    margin-bottom: 20px;
+}
+
+.donatIfo .donatName {
+    font: 400 15px Georgia;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 20px;
+}
+
+.donatLink {
+    display: flex;
+}
+
+.donatIfo a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font: 400 20px Georgia;
+    letter-spacing: 0.06em;
+    color: #545454;
+    background-color: #F1CDB3;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+.donatIfo a::after {
+    content: "";
+    background: url(../img/icon/credit-card.svg) no-repeat;
+    float: left;
+    width: 30px;
+    height: 23px;
+    padding-right: 15px;
+}
+
+.donatIfo p {
+    font: 400 12px Arial;
+    font-style: italic;
+    color: #B2B2B2;
+    line-height: 18px;
+}
+
+footer {
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    padding-top: 40px;
+}
+
+footer h3 {
+    font: 400 35px Georgia;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    padding-top: 16px;
+    margin-bottom: 33px;
+}
+
+footer .flexWrapper {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .flexWrapper>div {
+    width: 300px;
+}
+
+footer p {
+    min-height: 46px;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    font: 400 20px Georgia;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+footer .email {
+    background: url(../img/icon/mail.svg) no-repeat left center;
+}
+
+footer .tel {
+    background: url(../img/icon/phone.svg) no-repeat left center;
+}
+
+footer .local {
+    background: url(../img/icon/pin.svg) no-repeat left center;
+    padding-left: 42px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F1CDB3;
+}
+
+footer .petFoot {
+    background-image: url(../img/footer-puppy.png);
+    height: 310px;
+}
+
+@media(max-width:1256px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media(max-width:1192px) {
+    .startDog {
+        display: none;
+    }
+    .startWrapper {
+        justify-content: center;
+    }
+    .startFooter {
+        margin-bottom: 50px;
+    }
+    .startContent h2 {
+        display: inline-block;
+    }
+    .startContent {
+        text-align: center;
+    }
+}
+
+@media(max-width:1042px) {
+    .cardWoody {
+        display: none;
+    }
+    .petsContent {
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:908px) {
+    .about {
+        justify-content: space-around;
+    }
+    .about .aboutPets {
+        margin: 0;
+    }
+    .about .aboutText {
+        max-width: 322px;
+        text-align: center;
+    }
+}
+
+@media(max-width:768px) {
+    .pets {
+        justify-content: space-evenly;
+    }
+    footer .flexWrapper {
+        justify-content: space-around;
+    }
+    footer .petFoot {
+        margin-top: 60px;
+    }
+    .cardJennifer {
+        display: none;
+    }
+}
+
+@media(max-width:708px) {
+    .donatContent .donatIfo {
+        margin-top: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .donatLink {
+        justify-content: center;
+    }
+    .donatIfo h3 {
+        max-width: 100%;
+    }
+    nav li {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+@media(max-width:556px) {
+    .donatContent .donatDog {
+        display: none;
+    }
+}
+
+@media(max-width:468px) {
+    .petsNavButton {
+        display: none;
+    }
+}
+
+@media(max-width:386px) {
+    .donatIfo a {
+        font: 400 15px Georgia;
+    }
+    .startContent h2 {
+        font: 400 34px Georgia;
+    }
+    .container .petsH {
+        font: 400 27px Georgia;
+    }
+    .container .petsX {
+        font: 400 27px Georgia;
+    }
+    .container .petsL {
+        font: 400 27px Georgia;
+    }
+    .about .aboutText h2 {
+        font: 400 30px Georgia;
+    }
+    .donatIfo h3 {
+        font: 400 30px Georgia;
+    }
+}
